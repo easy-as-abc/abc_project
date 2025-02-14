@@ -15,7 +15,6 @@ class UserProfile {}        // 클래스 (PascalCase)
 const String API_KEY = "12345"; // 상수 (SCREAMING_SNAKE_CASE)
 ```
 
----
 
 #### 2. **파일 & 폴더 정리 (어디에 넣을까?)**
 - 화면 파일들은 `screens/` 폴더 안에!
@@ -40,7 +39,6 @@ lib/
  │   ├── constants.dart
 ```
 
----
 
 #### 3. **Flutter 위젯 (코드를 어떻게 나눌까?)**
 - 화면 전체를 만들 때 → `StatefulWidget`
@@ -93,7 +91,6 @@ class _CounterWidgetState extends State<CounterWidget> {
 }
 ```
 
----
 
 #### 4. **코드 깔끔하게 정리하기 (이름을 잘 짓자!)**
 ❌ 나쁜 예시:
@@ -108,7 +105,6 @@ var userName = "John";  // 어떤 변수인지 알기 쉬움
 void fetchUserProfile() {}  // 역할이 분명함
 ```
 
----
 
 #### 5. **API 데이터 가져오기 (인터넷에서 정보 불러오기) & 에러방지**
 - `Dio` 또는 `http` 패키지를 사용하여 데이터를 불러옴.
@@ -128,7 +124,6 @@ void fetchUserData() async {
 }
 ```
 
----
 
 #### 6. **Flutter에서 필수적인 문법**
 ✔ **`??` 연산자 (값이 없으면 기본값 사용)**
@@ -149,7 +144,6 @@ final String userName = "John";  // 한 번 값 설정하면 못 바꿈
 const double PI = 3.14;  // 컴파일 시점에서 정해진 값
 ```
 
----
 
 #### 7. **Flutter에서 코드 검사하기**
 1. `flutter analyze` → 코드 스타일 검사
